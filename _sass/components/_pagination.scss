@@ -38,9 +38,10 @@
 			text-transform: uppercase;
 		}
 
-		.next, .previous {
+		.next, .previous, .page_number {
 			@include icon;
 			padding: 0 1.75rem;
+			white-space: nowrap;
 
 			&:before {
 				display: inline-block;
