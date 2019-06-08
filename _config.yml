@@ -1,25 +1,24 @@
 # Site
 title:              SULTANOV.DEV
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
+description:        "Anar Sultanov's blog"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Comments
-disqus_shortname:   default
+disqus_shortname:   sultanov-dev
 
 # Social
-analytics-id:       "default"
-twitter:            default
+analytics-id:       "UA-141719792-1"
+twitter:            sultanovdev
+github:             anarsultanov
+linkedin:           anarsultanov
 facebook:           default
 instagram:          default
-github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com # change this to your email to receive free emails for your contact submissions via Slapform.com
+location:           Stockholm, Sweden
+email:              anar@sultanov.dev # change this to your email to receive free emails for your contact submissions via Slapform.com
 
 # Other
 background_image:   /images/bg.jpg
