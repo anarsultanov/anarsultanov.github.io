@@ -1,4 +1,4 @@
-<footer id="footer">
+<!--<footer id="footer">
   <section>
     <form method="POST" action="https://api.slapform.com/{{site.email}}">
       <div class="field">
@@ -7,7 +7,7 @@
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input type="text" name="slap_replyto" id="email" /> <!-- slap_replyto will set the reply-to as the submitter's email! -->
+        <input type="text" name="slap_replyto" id="email" /> &lt;!&ndash; slap_replyto will set the reply-to as the submitter's email! &ndash;&gt;
       </div>
       <div class="field">
         <label for="message">Message</label>
@@ -16,7 +16,7 @@
       <ul class="actions">
         <li><input type="submit" value="Send Message" /></li>
       </ul>
-      <input type="hidden" name="slap_redirect" value="{{site.url}}{{site.slapform_thankyou_page}}" /> <!-- slap_redirect allows you to set a custom redirect/thank you page -->
+      <input type="hidden" name="slap_redirect" value="{{site.url}}{{site.slapform_thankyou_page}}" /> &lt;!&ndash; slap_redirect allows you to set a custom redirect/thank you page &ndash;&gt;
     </form>
   </section>
   <section class="split contact">
@@ -42,8 +42,14 @@
       </ul>
     </section>
   </section>
-</footer>
+</footer>-->
 <!-- Copyright -->
 <div id="copyright">
-  <ul><li>&copy; HTML5 UP</li><li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a></li><li>Jekyll Integration by <a href="https://slapform.com">Slapform</a> </li></ul>
+  <ul><li>sultanov.dev &copy; <span id="year"></span></li>
+    <li>Design by <a href="https://html5up.net" rel="nofollow">HTML5 UP</a></li>
+    <li>Powered by <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a></li>
+    <li>Hosted on <a href="https://github.com/" rel="nofollow">GitHub</a></li></ul>
 </div>
+<script>
+  document.getElementById("year").innerHTML = (new Date()).getFullYear().toString();
+</script>
