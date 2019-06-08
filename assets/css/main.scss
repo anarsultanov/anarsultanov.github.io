@@ -46,6 +46,7 @@ $background_image: '{{site.background_image}}';
 // Base.
 
 	@import 'base/page';
+	@import 'base/syntax';
 	@import 'base/typography';
 
 // Component.
