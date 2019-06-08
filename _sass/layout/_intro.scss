@@ -9,7 +9,7 @@
 	#intro {
 		@include color-typography(invert);
 		@include color-button(invert);
-		@include padding(_size(padding) * 4, _size(padding) * 2);
+		@include padding(_size(padding) * 3, _size(padding) * 2);
 		@include vendor('align-items', 'center');
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
@@ -25,7 +25,7 @@
 		min-height: 100vh;
 
 		h1 {
-			font-size: 5rem;
+			font-size: 4rem;
 			line-height: 1;
 		}
 
@@ -44,6 +44,17 @@
 				opacity: 0;
 				visibility: hidden;
 			}
+		}
+
+		.photo {
+			width: 200px;
+			height: 200px;
+			margin-bottom: 1rem;
+			background-color: #fff;
+			padding: 4px;
+			border-radius: 500px;
+			-webkit-border-radius: 500px;
+			-moz-border-radius: 500px;
 		}
 
 		&.hidden {
