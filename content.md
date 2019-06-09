@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Example Content"
-author: "Chester"
+author: "Anar Sultanov"
 ---
-
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt ornare nibh, non elementum augue tempus eget. Pellentesque tempus scelerisque iaculis. Nullam interdum ultricies nibh quis sollicitudin. Donec ornare fermentum facilisis. Ut at sem ac sem imperdiet varius a eget tortor. Nam eu augue eget orci semper maximus in eget augue. Mauris ornare, nisl ut suscipit consectetur, mi quam interdum tellus, at rutrum quam eros ultrices mi.
 
 # Headers
@@ -73,15 +72,9 @@ Check out tale on [GitHub](https://github.com/chesterhow/tale).
 # Images
 {% highlight markdown %}
 ![Placeholder image](https://placehold.it/800x400 "Placeholder image")
-
-![Image with caption](https://placehold.it/700x400 "Image with caption")
-_This is an image with a caption_
 {% endhighlight %}
 
 ![Placeholder image](https://placehold.it/800x400 "Placeholder image")
-
-![Image with caption](https://placehold.it/700x400 "Image with caption")
-_This is an image with a caption_
 
 # Code and Syntax Highlighting
 Use back-ticks for `inline code`. Multi-line code snippets are supported too through Pygments.
