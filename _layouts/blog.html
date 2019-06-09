@@ -30,6 +30,14 @@
 
     <!-- Main -->
     <div id="main">
+        {% if site.posts.size == 0 %}
+        <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major">
+                <h2><a href="#">Coming Soon!</a></h2>
+            </header>
+        </article>
+        {% endif %}
         <!-- Post -->
         <section class="posts">
             {% for post in paginator.posts %}
