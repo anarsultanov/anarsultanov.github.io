@@ -29,7 +29,7 @@
 		}
 
 		> .post {
-			@include padding((_size(padding) * 4), (_size(padding) * 4));
+			@include padding((_size(padding) * 2), (_size(padding) * 4), (0,0,(_size(padding) * 2),0));
 
 			header {
 				&.major {
@@ -50,11 +50,11 @@
 			}
 
 			@include breakpoint(large) {
-				@include padding((_size(padding) * 3), (_size(padding) * 2));
+                @include padding((_size(padding) * 2), (_size(padding) * 2), (0,0,(_size(padding) * 2),0));
 			}
 
 			@include breakpoint(small) {
-				@include padding((_size(padding) * 2), (_size(padding) * 1));
+                @include padding((_size(padding) * 1), (_size(padding) * 1), (0,0,(_size(padding)),0));
 
 				header {
 					&.major {
