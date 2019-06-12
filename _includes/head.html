@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 <title>{{ page.title }}</title>
+<meta name="title" content="{{ page.title }}">
 <meta name="description" content="{{ page.description }}">
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/icon/apple-touch-icon.png" | absolute_url }}">
@@ -16,3 +17,37 @@
 <!-- CSS -->
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}" />
 <noscript><link rel="stylesheet" href="{{ "/assets/css/noscript.css" | absolute_url }}" /></noscript>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="{{ page.title }}">
+{% if page.excerpt %}
+<meta name="og:description" content="{{ page.excerpt | strip_html}}">
+{% else %}
+<meta name="og:description" content="{{ page.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+{% else %}
+<meta property="og:image" content="{{ "/images/photo_square.jpg" | absolute_url }}">
+{% endif %}
+
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@{{ site.twitter }}">
+<meta name="twitter:creator" content="{{ page.author }}">
+<meta name="twitter:title"   content="{{ page.title }}">
+
+{% if page.excerpt %}
+<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+{% else %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ page.image | absolute_url }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ "/images/photo_square.jpg" | absolute_url }}">
+{% endif %}
+<!-- end of Twitter cards -->
