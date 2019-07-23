@@ -15,10 +15,10 @@ layout: null
       <priority>0.7</priority>
     </url>
   {% endfor %}
-  {% for page in site.pages %}
+  {% for page in site.html_pages %}{% unless page.noindex == true %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
-      {% if page.sitemap.lastmod == null %} <lastmod>2017-11-10T00:20:35+00:00</lastmod>
+      {% if page.sitemap.lastmod == null %} <lastmod>2019-06-01T00:00:00+02:00</lastmod>
       {% else %} <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
       {% if page.sitemap.changefreq == null %} <changefreq>weekly</changefreq>
@@ -27,6 +27,6 @@ layout: null
       {% if page.sitemap.priority == null %} <priority>0.5</priority>
       {% else %} <priority>{{ page.sitemap.priority }}</priority>
       {% endif %}
-     </url>
-  {% endfor %}
+    </url>
+    {% endunless %}{% endfor %}
 </urlset>
