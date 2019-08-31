@@ -2,7 +2,7 @@
 layout: post
 title: "Database column-level encryption with Spring Data JPA"
 author: "Anar Sultanov"
-image: /images/posts/2019-08-30/image.jpg
+image: /images/posts/2019-08-31/image.jpg
 ---
 
 Column-level encryption is one of the database encryption methods, which allows user to select specific attributes 
