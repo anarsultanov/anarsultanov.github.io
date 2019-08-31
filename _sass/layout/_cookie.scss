@@ -1,0 +1,37 @@
+/* Cookie Notice */
+
+#cookie-notice {
+  padding: 0.2rem !important;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+  background-color: transparentize(_palette(bg), 0.050);
+}
+
+#cookie-notice span {
+  font-size: 0.8rem;
+}
+
+#cookie-notice a {
+  cursor: pointer;
+}
+
+#cookie-notice .button {
+  margin-left: 2rem;
+  font-size: 0.6rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 1.0rem;
+}
+
+@media (max-width: 767px) {
+  #cookie-notice .button {
+    position: relative;
+    margin-left: 1rem;
+    bottom: 4px;
+  }
+}
