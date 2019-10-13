@@ -32,7 +32,7 @@
                     <header class="major">
                         <span class="date">{{page.date | date_to_string}}</span>
                         <h1>{{page.title}}</h1>
-                        <p>{{page.excerpt}}</p>
+                        <div class="box excerpt">{{page.excerpt}}</div>
                     </header>
                     <p>{{ content | remove: page.excerpt }}</p>
                 </section>
