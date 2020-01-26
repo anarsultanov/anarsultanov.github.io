@@ -169,6 +169,10 @@
 		text-align: right;
 	}
 
+	.nobr {
+		white-space: nowrap;
+	}
+
 	@mixin color-typography($p: null) {
 		@if $p != null {
 			color: _palette($p, fg);
