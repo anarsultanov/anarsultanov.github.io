@@ -1,4 +1,5 @@
 ## Blog
+[![pages-build-deployment](https://github.com/anarsultanov/anarsultanov.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/anarsultanov/anarsultanov.github.io/actions/workflows/pages/pages-build-deployment)
 
 Anar Sultanov's personal blog located at [https://sultanov.dev](https://sultanov.dev)
 
