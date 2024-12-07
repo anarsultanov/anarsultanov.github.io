@@ -49,7 +49,7 @@
 		}
 
 		&.major {
-			margin: 0 0 (_size(element-margin) * 2) 0;
+			margin: 0 0 _size(element-margin) 0;
 			text-align: center;
 
 			> :last-child {

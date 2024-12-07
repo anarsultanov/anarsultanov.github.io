@@ -63,6 +63,7 @@ $background_image: '{{site.background_image}}';
 
 // Layout.
 
+	@import 'layout/banner';
 	@import 'layout/wrapper';
 	@import 'layout/intro';
 	@import 'layout/header';
