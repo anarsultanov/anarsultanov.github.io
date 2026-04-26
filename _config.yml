@@ -1,6 +1,6 @@
 # Site
 title:              SULTANOV.DEV
-description:        "Anar Sultanov's blog"
+description:        "Anar Sultanov: software engineer, CTO, founder. Notes on software engineering and the problems I've been working on."
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sultanov.dev" # the base hostname & protocol for your site
